@@ -12,7 +12,7 @@ compteurVoyelle := 0
     Read(c)
     compteurCarac := compteurCarac + 1
     
-    IF (c ='A' OR  c ='a' OR  c ='E' OR c ='e' OR c ='I' OR c ='i' OR c ='U' OR c ='u' OR c ='O' ORc ='o' OR c ='y' OR c ='Y') ) THEN
+    IF (c ='A' OR  c ='a' OR  c ='E' OR c ='e' OR c ='I' OR c ='i' OR c ='U' OR c ='u' OR c ='O' ORc ='o' OR c ='y' OR c ='Y')  THEN
         compteurVoyelle := compteurVoyelle + 1
     END_IF
     IF (c = " ") THEN
