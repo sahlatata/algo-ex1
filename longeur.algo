@@ -1,0 +1,30 @@
+ALGORITHM algorithm_name
+VAR
+ c : CHAR
+ compteurMot,compteurCarac,compteurVoyelle : INTEGER;
+BEGIN
+
+compteurMot := 1
+compteurCarac := 0
+compteurVoyelle := 0
+    
+    REPEAT
+    Write("Donner un charactere")
+    Read(c)
+    compteurLettre := compteurLettre + 1
+    
+    IF (c ='A' OR  c ='a' OR  c ='E' OR c ='e' OR c ='I' OR c ='i' OR c ='U' OR c ='u' OR c ='O' ORc ='o' OR c ='y' OR c ='Y') ) THEN
+        compteurVoyelle := compteurVoyelle + 1
+    END_IF
+    IF (c = " ") THEN
+        compteurMot := compteurMot + 1
+    END_IF
+
+    UNTIL (c = ".")
+    
+    
+
+    Write ("le nombre de mot est de",compteurMot)
+    Write ("le nombre de caracteres est de", compteurLettre) 
+    Write("le nombre de voyelle est de", compteurVoyelle)
+END
